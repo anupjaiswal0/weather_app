@@ -1,0 +1,41 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.mdiv{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container{
+	height: 450px;
+	width: 400px;
+	box-shadow: 0px 0px 20px lightblue;
+	border-radius: 30px;
+	padding: 20px;
+	/*background-image: url("https://i.gifer.com/OzD.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
+}
+.img
+{
+background-image: url("https://i.gifer.com/OzD.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+	width: 500px;
+}
+
+.search-icon{
+	height:20px;
+}
