@@ -2,6 +2,67 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	 {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 
 .mdiv{
@@ -13,6 +74,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*background-image: url("https://media.licdn.com/dms/image/C4D12AQHRsnnNXSFmOA/article-cover_image-shrink_600_2000/0/1619427516457?e=2147483647&v=beta&t=MamRa6S4r-oIqKq325xykdwqruCAV0e7VGJwZaaRpbg");*/
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
@@ -22,10 +86,13 @@
 	box-shadow: 0px 0px 20px lightblue;
 	border-radius: 30px;
 	padding: 20px;
-	/*background-image: url("https://i.gifer.com/OzD.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-*/
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px grey;
+	border-radius: 30px;
+	background:transparent;
+	backdrop-filter:blur(20px);
+
 }
 .img
 {
@@ -34,8 +101,59 @@ background-image: url("https://i.gifer.com/OzD.gif");
 	background-size: cover;
 	height: 450px;
 	width: 500px;
+
 }
 
 .search-icon{
 	height:20px;
+}
+
+input[type="text"]
+{
+	height: 30px;
+	width: 180px;
+	padding-left: 10px;
+	outline: none;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.srch_btn{
+	border:none;
+	background-color: transparent;
+	padding-top: 30px;
+	cursor: pointer;
+}
+
+.component{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn{
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+#city_name{
+	color: red;
+	font-family: Arial Black;
+	font-size: 15px;
+}
+
+.measurement{
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+
+.headings{
+	color: royalblue;
+	font-family: Arial Black;
+	font-size: 22px;
+	text-align: center;
+}
+
+input{
+	margin-top: 30px;
 }

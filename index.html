@@ -4,24 +4,103 @@
 	<title>Weather App</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+	<!-- AOS -->
+	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<div class="mdiv">
-		<div class="container img">
-			<h3 style="color: white">WEATHER FORECAST</h3>
-			<form>
-				<input type="text" name="city" id="city_name" placeholder="Enter a City" height="40px">
-				<button type="button" onclick="fetchCity()">
-					<img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg" alt="search icon" height="20px">
-				</button>
+         
+         <div class="slideshow-container">
 
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://images.infoseemedia.com/wp-content/uploads/2022/02/A-child-enjoy-sunlight-in-winter-season-whatsapp-dp-image-1024x1024.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://images.infoseemedia.com/wp-content/uploads/2022/02/Summer-mountains-whatsapp-dp-image-1024x1024.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.infoseemedia.com/wp-content/uploads/2022/02/A-plume-tree-in-summer-morning-whatsapp-dp-image-1-1024x1024.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+               
+          
+		<div class="container img">
+			<h3 class="headings">WEATHER FORECAST</h3>
+			<form>
+				<div class="component">
+
+					<div>
+				     <input type="text" name="city" id="city_name" placeholder="Enter a City" autofocus>
+				     </div>
+
+				     <div class="btn">
+				     <button type="button" class="srch_btn" onclick="fetchCity()">
+				     <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg" alt="search icon" height="20px">
+				     </button>
+				     </div>
+
+               </div>
+               <br>
+               <div align="center" style="margin-top: -20px;">
+               	<img src="">
+               </div>
+
+               <div align="center" style="margin-top: 50px">
+               	<span id="city">CITY NAME</span>
+               	<br>
+               	<span class="measurement" id="temp" >0°C</span>
+               </div>
+
+               <div align="center" style="margin-top: 20px">
+               	<table width="100%" cellpadding="10px">
+               		<tr align="center">
+               			<td>
+
+               				<h5 class="headings" >WIND SPEED</h5>
+               				<span class="measurement" id="wind_speed"  data-aos="slide-right" data-aos-duration="4000">0 km/hr
+               				</span>
+               			</td>
+               			<td>
+               				<h4 class="headings">HUMIDITY</h4>
+               				<span class="measurement" id="humidity">0 g/kg
+               				</span>
+               			</td>
+               		</tr>
+               		
+               	</table>
+
+               	
+               </div>
 
 
 
 
 			</form>
+		
 		</div>
 	</div>
+<!-- AOS LINK -->
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
