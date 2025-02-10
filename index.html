@@ -1,77 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Weather App</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
 	<!-- AOS -->
-	 
+
 </head>
+
 <body>
-
-
-	<div class="mdiv">
-         <div>
-              <img src="https://i.pinimg.com/originals/5a/dc/ae/5adcae5e3af5cdba2bb417b92e6d05bc.gif">
-         </div>
-         
-		<div class="container img">
-			<h3 class="headings">WEATHER FORECAST</h3>
-			<form>
-				<div class="component">
-
-					<div>
-				     <input type="text" name="city" id="city_name" placeholder="Enter a City" autofocus>
-				     </div>
-
-				     <div class="btn">
-				     <button type="button" class="srch_btn" onclick="fetchCity()" >
-				     <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg" alt="search icon" height="20px">
-				     </button>
-				     </div>
-
-               </div>
-               <br>
-               <div align="center" style="margin-top: -20px;">
-               	<img src="">
-               </div>
-
-               <div align="center" style="margin-top: 50px;color: white;">
-               	<span id="city">CITY NAME</span>
-               	<br>
-               	<span class="measurement" id="temp" >0°C</span>
-               </div>
-
-               <div align="center" style="margin-top: 20px">
-               	<table width="100%" cellpadding="10px">
-               		<tr align="center">
-               			<td>
-
-               				<h5 class="headings" >WIND SPEED</h5>
-               				<span class="measurement" id="wind_speed">0 km/hr
-               				</span>
-               			</td>
-               			<td>
-               				<h4 class="headings">HUMIDITY</h4>
-               				<span class="measurement" id="humidity">0 g/kg
-               				</span>
-               			</td>
-               		</tr>
-               		
-               	</table>
-
-               	
-               </div>
-
-
-
-
-			</form>
-		
-		</div>
+<div class="mdiv">
+	<div>
+		<img src="https://i.pinimg.com/originals/5a/dc/ae/5adcae5e3af5cdba2bb417b92e6d05bc.gif">
 	</div>
 
+	<div class="container img">
+		<h3 class="headings">WEATHER FORECAST</h3>
+		<form>
+			<div class="component">
+				<div>
+					<input type="text" name="city" id="city_name" placeholder="Enter City NAME" autofocus />
+				</div>
+				<div class="btn">
+					<button type="button" class="srch_btn" onclick="fetchCity()">
+						<img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg"
+							alt="search icon" height="20px">
+					</button>
+				</div>
+			</div>
+			<br>
+			<div align="center" style="margin-top: -20px;">
+				<!-- <img src=""> -->
+			</div>
+			<div align="center" style="margin-top: 50px; color: white;">
+				<span id="city">CITY NAME</span>
+				<br>
+				<span class="measurement" id="temp">0°C</span>
+			</div>
 
-
+			<div align="center" style="margin-top: 20px">
+				<table width="100%" cellpadding="10px">
+					<tr align="center">
+						<td>
+							<h5 class="headings">WIND SPEED</h5>
+							<span class="measurement" id="wind_speed">0 km/h</span>
+						</td>
+						<td>
+							<h4 class="headings">HUMIDITY</h4>
+							<span class="measurement" id="humidity">0 g/kg</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+</div>
 </body>
+
 </html>

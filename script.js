@@ -27,6 +27,13 @@ function fetchCity()
 	}
 }
 
+// Listen for 'Enter' key press inside the input field
+document.getElementById("cityInput").addEventListener("keydown", function(event) {
+	if (event.key === "Enter") {
+		fetchCity();
+	}
+});
+
 
 
 
